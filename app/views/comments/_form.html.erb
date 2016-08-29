@@ -1,9 +1,9 @@
 <%= form_for [link, link.comments.build] do |f| %>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :comment %><br>
-    <%= f.text_area :comment,class: "form-group" %>
+    <%= f.text_area :comment, class: "form-control" %>
   </div>
   <div class="actions">
-    <%= f.submit :Create %>
+    <%= f.submit :Create, class: "btn btn-info" %>
   </div>
 <% end %>
